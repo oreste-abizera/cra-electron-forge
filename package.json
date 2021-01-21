@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "public/electron.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -55,7 +56,10 @@
   },
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "src/icons/win/icon.ico",
+        "name": "React + Electron testing App"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
